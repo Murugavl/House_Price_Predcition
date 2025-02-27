@@ -27,23 +27,24 @@ function onClickedEstimatePrice() {
   var estPrice = document.getElementById("uiEstimatedPrice");
 
   // Corrected URL if you're not using nginx
-  var url = "/predict_home_price"; 
+  var url = "api/predict_home_price"; 
 
   $.post(url, {
       total_sqft: parseFloat(sqft.value),
       bhk: bhk,
       bath: bathrooms,
       location: location.value
-  },function(data, status) {
+  }, function(data, status) {
       console.log(data.estimated_price);
       estPrice.innerHTML = "<h2>" + data.estimated_price.toString() + " Lakh</h2>";
       console.log(status);
   });
+
 }
 
 function onPageLoad() {
   console.log( "document loaded" );
-  var url = "/api/get_location_names"; // Keep this as it is, unless you want to change it
+  var url = "http://127.0.0.1:5000/api/get_location_names"  ; // Keep this as it is, unless you want to change it
 
   $.get(url,function(data, status) {
       console.log("got response for get_location_names request");
