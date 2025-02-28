@@ -98,5 +98,5 @@ We welcome contributions from everyone. To contribute:
 
 ## 👥 Let's Connect!
 Feel free to connect with me on LinkedIn or GitHub for discussions, collaborations, or any queries regarding this project!
-👤 LinkedIn: [Your LinkedIn Profile](https://www.linkedin.com/in/murugavelv)
+👤 LinkedIn: [LinkedIn](https://www.linkedin.com/in/murugavelv)
 🌐 GitHub: [Murugavl](https://github.com/Murugavl)
